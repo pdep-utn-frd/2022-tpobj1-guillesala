@@ -1,0 +1,13 @@
+import wollok.game.*
+import dino.* 
+
+program dino {
+
+	juego.configurar()
+	juego.iniciar()
+	const rain = game.sound("Contra Music (NES) - Jungle Theme [Stage 1].mp3")
+	rain.shouldLoop(true)
+	game.schedule(500, { rain.play()} )
+	game.start()
+
+} 
